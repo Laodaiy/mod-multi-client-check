@@ -46,7 +46,7 @@ public:
         {
             // There is a Limit of Client
             if (sConfigMgr->GetOption<bool>("Disallow.Multiple.Client.Announce", true))
-                ChatHandler(player->GetSession()).SendSysMessage(Acore::StringFormat("This Server Max Account of Same IP Is: {}", CountLimit));
+                ChatHandler(player->GetSession()).SendSysMessage(Acore::StringFormat("该服务器同一IP的最大帐户为：{}", CountLimit));
 
             uint32 count = 1;
 
